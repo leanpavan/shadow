@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Contato</title>
+    <link rel="stylesheet" href="contato.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Formulário de Contato</h2>
+        <form action="processar_formulario.php" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+            </div>
+            <div class="form-group">
+                <label for="sobrenome">Sobrenome:</label>
+                <input type="text" id="sobrenome" name="sobrenome" placeholder="Seu sobrenome" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+            </div>
+            <div class="form-group">
+                <label for="telefone">Telefone:</label>
+                <input type="text" id="telefone" name="telefone" maxlength="15" oninput="aplicarMascara(event)" placeholder="(XX) XXXXX-XXXX" required>
+            </div>
+            <div class="form-group">
+                <label for="assunto">Assunto:</label>
+                <select id="assunto" name="assunto" required>
+                    <option value="" disabled selected>Selecione um assunto</option>
+                    <option value="processo_admissao">Processo de Admissão</option>
+                    <option value="duvidas_atuacao">Dúvidas sobre nossa Atuação</option>
+                    <option value="qualidade">Qualidade do Serviço (Elogios e Criticas)</option>
+                    <option value="consultoria">Consultoria para insitituições (Treinamento)</option>
+                    <option value="consultoria">Outro</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" placeholder="Sua mensagem" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="arquivo">Anexar Arquivo (PDF, máximo 15MB):</label>
+                <input type="file" id="arquivo" name="arquivo" accept=".pdf">
+                <small>Somente arquivos PDF, até 15MB.</small>
+            </div>
+            <div class="form-group">
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="contato.js"></script>
+</html>

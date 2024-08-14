@@ -1,0 +1,61 @@
+Nome: 
+            <input type="text" name="txtName" id="txtName" required> <br>
+            Email para contato:
+            <input type="email" name="txtMail" id="txtMail" placeholder="example@shadow.com.br" required> <br>
+            <label for="telefone">Número de Telefone:</label>
+            <input type="text" id="telefone" placeholder="(XX) XXXXX-XXXX" maxlength="15">
+            <span class="error" id="error"></span> <br>
+    
+            Duração: <br>
+            <input type="text" name="duration" id="duration" required> <br>
+    
+            Música: <br>
+            <input type="text" name="song" id="song" placeholder="Linkin Park - Numb"> <br>
+            Minutagem: <br>
+            <input type="text" name="song" id="song" placeholder="0:50"> <br>
+    
+            Estilo de edição: <br>
+            <select name="estilo" id="estilo">
+                <option value="" disabled selected>Estilo de edição</option>
+                <option value="1">AMV</option>
+                <option value="2">Esporte</option>
+                <option value="3">TikTok</option>
+                <option value="4">Intro</option>
+                <option value="5">Outro</option>
+            </select> <br>
+    
+            Proporção: <br>
+            <select name="prop" id="prop">
+                <option value="" disabled selected>Proporção</option>
+                <option value="1">Horizontal</option>
+                <option value="2">Vertical</option>
+            </select> <br>
+    
+            Obra original: <br>
+            <input type="text" name="obra" id="obra" placeholder="Sonic Adventures 2"> <br>
+            Idioma: <br>
+            <input type="text" name="idioma" id="idioma" placeholder="Japonês"> <br>
+    
+            Personagem principal: <br>
+            <input type="text" name="char" id="char" placeholder="Shadow The Hedgehog" required> <br>
+    
+            Personagem secundário: <br>
+            <input type="radio" name="secundario"> Sim <br>
+            <input type="radio" name="secundario"> Não <br>
+            <input type="text" name="char" id="char" placeholder="Sonic The Hedgehog"> <br>
+    
+            Transições: <br>
+            <input type="checkbox" name="transition" id="transition"> MovieMaker <br>
+            <input type="checkbox" name="transition" id="transition"> Shake <br>
+            <input type="checkbox" name="transition" id="transition"> Twixter <br>
+            <input type="checkbox" name="transition" id="transition"> Glitchy <br>
+            <input type="checkbox" name="transition" id="transition"> Fade <br>
+            <input type="checkbox" name="transition" id="transition"> Mask <br>
+            <input type="checkbox" name="transition" id="transition"> Lego <br>
+    
+            <br>Descreva como deseja sua edição: <br>
+            <textarea style="width: 200px; height: 200px;"></textarea>
+            <input type="hidden" value="2"> <br>
+    
+    
+            <input type="button" id="btnSend" value="Enviar"> <br>

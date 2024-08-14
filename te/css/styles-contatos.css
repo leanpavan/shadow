@@ -1,28 +1,75 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow-x:hidden;
+    padding:0px;
+    color: white;
+    background-color: #C02E27;
     margin: 0;
 }
+.navbar{
+    background-color: #060403;
+    width: 100%;
+    height: 50px;
+    margin:0px;
+    overflow-y:hidden;
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+
+}
+.navbar p{
+    margin: 0%;
+    padding: 0px 10px;
+    font-size:x-large;
+
+}
+.navbar ul {
+    font-size:x-large;
+    display:flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+.navbar ul li{
+    padding:0px 10px;
+    color: #C02E27;
+}
+.navbar ul li a{
+    text-decoration: none;
+    padding: 10px;
+    color: #C02E27;
+}
+.navbar ul li a:hover{
+    background-color: #241B1B;
+    border-radius: 5px;
+}
+
+.nav-active, .btn:hover {
+    background-color: #241B1B;
+    color: white;
+}
 .form-container {
+    justify-content: center;
+    align-items: center;
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 600px;
+    margin-left: 35%;
 }
 .form-container h2 {
     margin-bottom: 20px;
     text-align: center;
     color: #DC0000; /* Cor principal */
-}
-
-body{
-    background-color: #DC0000;
 }
 
 .form-group {

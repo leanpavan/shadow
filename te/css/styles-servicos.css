@@ -135,3 +135,14 @@ textarea {
 .submit-button input:hover {
     background-color: #C02E27;
 }
+
+.home_footer, footer{
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    color: #f1d6d0;
+    background-color: black;
+ }
